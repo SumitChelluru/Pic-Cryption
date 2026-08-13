@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pic-Cryption</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+<center>
+    <h1>WELCOME TO PICRYPTION</h1></center>
+    <form method="post" action="/execute">
+        <br><br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <label for="imgname"class="btn"style="font-size:30px,color:white">Image Address:</label>
+        <input type="text" name="imgname" id="imgname">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <label for="message" class="btn"style="font-size:30px,color:white">Message:</label>
+        <input type="text" name="message" id="message">
+        <br>
+         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <label for="mode" class="btn"style="font-size:15px">Mode:</label>
+        <select name="mode" style="font-size:15px" id="mode">
+
+            <option value="arnold_cat">arnold_cat</option>
+            <option value="arnold_cat_de">arnold_cat_de</option>
+            <option value="aes_en">aes_en</option>
+            <option value="aes_de">aes_de</option>
+            <option value="stegano_write">stegano_write</option>
+            <option value="stegano_read">stegano_read</option>
+        </select>
+                   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp &nbsp
+
+
+        <!-- Add other input fields (message, key, password) here as needed -->
+
+
+        <label for="key" class="btn"style="font-size:30px,color:white">Key/Iterations:</label>
+        <input type="text" name="key" id="key">
+        <br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp&emsp;&emsp;&emsp;
+        <label for="password" class="btn"style="font-size:30px,color:white">Password:</label>
+        <input type="password" name="password" id="password">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <center>
+        <input type="submit" class="btn" style="font-size:30px" value="Execute"></center>
+    </form>
+
+</body>
+</html>
